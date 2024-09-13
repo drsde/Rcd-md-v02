@@ -10,9 +10,9 @@ module.exports = {
    ANTILINK: toBool(process.env.ANTI_LINK) || false,
    HEROKU: toBool(process.env.HEROKU) || false,
    AUTO_READ: toBool(process.env.AUTO_READ) || false,
-   AUTO_STATUS_READ: toBool(process.env.AUTO_STATUS_READ) || false,
+   AUTO_STATUS_READ: toBool(process.env.AUTO_STATUS_READ) || true,
    DELETED_LOG: toBool(process.env.DELETED_LOG) || true,
-   STATUS_SAVER: toBool(process.env.STATUS_SAVER) || true,
+   STATUS_SAVER: toBool(process.env.STATUS_SAVER) || false,
    AUTO_REACT: toBool(process.env.AUTO_REACT) || false,
 
    // String Values
@@ -20,7 +20,7 @@ module.exports = {
    HANDLERS: process.env.HANDLER === "false" || process.env.HANDLER === "null" ? "^" : "[.]",
    BOT_INFO: process.env.BOT_INFO || "ᴀsᴛʀᴏ;ғxᴏᴘ-ᴍᴅ", // YourName;BotName;Image/VideoLink
    SUDO: process.env.SUDO || "91234567899",
-   PRESENCE: process.env.PRESENCE || "unavailable", // "unavailable", "available", "composing", "recording", "paused"
+   PRESENCE: process.env.PRESENCE || "recording", // "unavailable", "available", "composing", "recording", "paused"
    CAPTION: process.env.CAPTION || "© ғxᴏᴘ ᴍᴅ",
    TIME_ZONE: process.env.TIME_ZONE || "Africa/Lagos",
    ANTILINK_ACTION: process.env.ANTI_LINK || "kick",
